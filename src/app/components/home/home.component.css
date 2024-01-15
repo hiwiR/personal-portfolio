@@ -1,0 +1,35 @@
+.landing-bg{
+ background-image: url(https://www.pixground.com/wp-content/uploads/2023/11/Technology-Futuristic-Cloud-AI-Generated-4K-Wallpaper.jpg);
+ background-size: cover; /* Cover the entire container */
+ background-position: center; /* Center the image */
+ background-repeat: no-repeat; /* Do not repeat the image */
+ height: 75vh; /* Set the height to cover the entire viewport */
+ margin: 0; /* Remove default margins */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center; 
+ color: white; 
+ display: flex;
+}
+.landing-text{
+    color: white;
+    font-size: 50px;
+    
+}
+.landing-iconset{
+      position: absolute;
+      bottom: 12%; /* Adjust the negative margin to control the amount of overlap */
+      /* Additional styling for the Sample div if needed */
+      background-color: whitesmoke;
+      padding: 1%;
+      height: 100px;
+      width: 40%;
+      color: black;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+}
+mat-icon {
+    transform: scale(3);
+}
