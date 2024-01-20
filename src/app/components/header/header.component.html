@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" style="background-color: whitesmoke; color: black;">
+    <mat-toolbar-row>
+        <span class="logo">Hiwot A</span>
+        <span class="example-spacer"></span>
+      <!-- Button with Menu (visible on larger screens) -->
+      <div *ngIf="isScreenLarge()" fxLayout="row">
+            <a class="example-link" aria-hidden="false" aria-label="Example heart icon">Home</a>
+            <a class="example-link" aria-hidden="false" aria-label="Example heart icon">About Me</a>
+            <a class="example-link" aria-hidden="false" aria-label="Example heart icon">Projects</a>
+            <a class="example-link" aria-hidden="false" aria-label="Example heart icon">Contact</a>
+      </div>
+  
+      <!-- Button (visible on smaller screens) -->
+      <button *ngIf="!isScreenLarge()" mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Menu">menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/home">Home</button>
+        <button mat-menu-item routerLink="/about">About</button>
+        <button mat-menu-item routerLink="/contact">Contact</button>
+        <!-- Add more menu items as needed -->
+      </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>
+  
