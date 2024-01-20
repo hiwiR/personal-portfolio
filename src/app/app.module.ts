@@ -6,9 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material.module';
 import { ComponentModule } from './modules/component.module';
+import { OverviewComponent } from './components/overview/overview.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimelineComponent,
   ],
   imports: [
     BrowserModule,
