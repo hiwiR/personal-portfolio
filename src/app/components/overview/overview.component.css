@@ -1,16 +1,60 @@
 .overview-img{
-    width: 40%;
-    height: 40%;
-    border-radius: 50%; 
-    border-color: black;
-    border-width: 5px;
+    width: 30%;
+    height: 30%;
+    border-color: rgb(225, 192, 224);
+    border-width: 1px;
     border-style: solid;
 }
 h1{
     font-size: 900;
 }
 
-@media(max-width: 600px) {
+.heading{
+    font-size:  27px;
+    font-weight: 500;
+    color: rgb(106,6,236);
+    position: relative;
+    margin-top: 80px; 
+}
+.progress-label{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.skillSet-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+  
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.skillSet-Container div{
+    flex: 1;
+}
+.test1 .mat-progress-bar-fill::after {
+    background-color: #1E457C !important;
+}
+
+.container {
+    width: 100%; 
+    background-color: #ddd;
+  }
+ .skills {
+    text-align: right; 
+   
+    color: white; 
+    background-image: linear-gradient(to bottom, rgb(179, 136, 236),rgb(231, 152, 238));
+  }
+  .s_90 {width: 90%; } 
+  .s_80 {width: 80%; } 
+  .s_65 {width: 65%; }
+
+  @media(max-width: 600px) {
     .overview-img{
         width: 80%;
         height: 90%;
@@ -18,11 +62,10 @@ h1{
         border-width: 5px;
         border-style: solid;
     }
-}
-.heading{
-    font-size:  27px;
-    font-weight: 500;
-    color: rgb(106,6,236);
-    position: relative;
-    margin-bottom: 80px;
+    .skillSet-Container div{
+        flex: 0 0 100%;
+    }
+    h3{
+        text-align: center;
+    }
 }

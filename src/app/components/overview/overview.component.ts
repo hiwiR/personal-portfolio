@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent {
-
+progressValue = 50;
+color = "blue"
 }

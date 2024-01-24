@@ -1,0 +1,57 @@
+.container{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+   
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-image : url(https://assets-global.website-files.com/5a9ee6416e90d20001b20038/64c21faa4f2a2f5ac63df849_-23.png); */
+}
+
+.contact-form mat-form-field{
+    width: 40%;
+}
+h1{
+   
+    padding: 5%;
+   
+}
+.contact-menus{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contact-menu{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+   
+   
+} 
+.contact-side{
+    background-image: linear-gradient(to bottom, rgb(179, 136, 236),rgb(231, 152, 238));
+    font-size: "30px";
+}
+.form-btn {
+    background-color: rgb(179, 136, 236);
+    width: 40%;
+    
+}
+
+
+@media screen and (max-width:1050px) {
+    .contact-menu{
+        width: 80%;
+    }
+}

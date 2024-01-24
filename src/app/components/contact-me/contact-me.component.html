@@ -1,0 +1,31 @@
+<div class="container">
+<h1>Contact Me</h1>
+<form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" fxLayout="column"> 
+            <mat-form-field >
+                <mat-label>Message Title</mat-label>
+                <input matInput placeholder="Ex. Job Opportunity" formControlName="title" >
+            </mat-form-field> 
+            <mat-form-field >
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Ex. John.Doe@gmail.com" formControlName="email">
+            </mat-form-field> 
+            <mat-form-field >
+                <mat-label>Guest Name</mat-label>
+                <input matInput placeholder="Ex. John" formControlName="guestName">
+            </mat-form-field>
+            <mat-form-field >
+                <mat-label>Phone Number</mat-label>
+                <input matInput placeholder="Ex. John" formControlName="phone">
+            </mat-form-field>  
+            <mat-form-field >
+                <mat-label>Message</mat-label >
+                <textarea matInput
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="1"
+            cdkAutosizeMaxRows="10"
+            formControlName="message"></textarea>
+            </mat-form-field> 
+            <button mat-flat-button class="form-btn" style="background-color: rgb(179, 136, 236);">Send</button> 
+        </form>
+</div>
