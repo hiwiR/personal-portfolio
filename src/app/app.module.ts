@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/modules/material.module';
 import { ComponentModule } from './shared/modules/component.module';
-import { OverviewComponent } from './components/overview/overview.component';
+import { RouterModule } from '@angular/router';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -17,11 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    ComponentModule
+    ComponentModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

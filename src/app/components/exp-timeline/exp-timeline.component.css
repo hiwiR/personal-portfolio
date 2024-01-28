@@ -2,7 +2,7 @@
 .main{
     width: 100%;
     height: auto;
-    /* background-color: rgb(245,245,245); */
+    background-color: rgb(245,245,245); 
     padding: 50px 0;
     display: grid;
     place-items: center;
@@ -28,7 +28,7 @@
 }
 
 .container{
-    width: 70%;
+    width: 60%;
     height: auto;
     position: relative;
 
@@ -103,7 +103,9 @@ ul li .date{
     place-items:  center;
     font-size: 14px;
 }
-
+li span{
+    color:  rgba(225, 3, 245, 0.699);;
+}
 .container ul li .circle{
     width: 30px;
     height: 30px;
@@ -155,7 +157,7 @@ ul li .date{
     }
 
     .container ul li:nth-child(odd){
-        transform: translateX(-4%);
+        transform: translateX(-2%);
         text-align: left;
     }
 
@@ -166,11 +168,13 @@ ul li .date{
 
     .container ul li:nth-child(odd) .circle{
         right: 108%;
+        display: none;
        
     } 
     .container ul li:nth-child(even) .circle{
         left : -20px;
         transform: translate(-50%,-50%);
+        display: none;
     }
     .container ul li:nth-child(odd) .date{
         left: -50px;
@@ -180,4 +184,4 @@ ul li .date{
         left: -70 px;
         
     } 
-}
+} 

@@ -1,62 +1,180 @@
+
 .landing-bg{
- background-image: url(https://tailwindcomponents.com/gradient-generator/assets/header.a6837f08.webp);
- background-size: cover; /* Cover the entire container */
- background-position: center; /* Center the image */
- background-repeat: no-repeat; /* Do not repeat the image */
- height: 75vh; /* Set the height to cover the entire viewport */
- margin: 0; /* Remove default margins */
+  margin-top: 6%;
+  background-image: url(https://media.istockphoto.com/id/1322403705/video/4k-beautiful-abstract-wave-background-with-copy-space.jpg?s=640x640&k=20&c=Q4nDAsskIOBEy3A-rhu3y0myYBnzE603lXxbls8f_i8=);
+  /* background-size: 100% auto; Cover the entire container */
+ /* Center the image */
+  /* Do not repeat the image */
+  background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+ height: 46%;
+ width: 100%; /* Set the height to cover the entire viewport */
+  /* Remove default margins */
  display: flex;
  flex-direction: column;
- align-items: center;
- justify-content: center; 
  color: white; 
- display: flex;
- background-size: cover;
+ /* background-size: cover;
  background-repeat: no-repeat;
- background-position: center center;
+ background-position: center center; */
 }
 .landing-main{
-    height: 100vh;
-}
-.landing-text{
-    color: white;
-    font-size: 50px;
-    width: 100%;
+    display: flex;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Adjust the alpha value for transparency */
-    padding: 20px;
-    
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .landing-iconset{
-      position: absolute;
-      bottom: 14%; /* Adjust the negative margin to control the amount of overlap */
-      /* Additional styling for the Sample div if needed */
+     
       background-color: white;
       padding: 1px;
-      height: 100px;
-      width: 40%;
+      height: 40%;
+      width: 60%;
       color: black;
       display: flex;
-      justify-content: space-evenly;
       align-items: center;
+      justify-content: space-evenly;
+      left: 20%;
+      
 }
 .linkedin-icon {
-    padding: 3%;
-    font-size: 20px; /* Adjust the size as needed */
+    margin-top: 5%;
+    padding: 1%;
+    font-size: 20px; 
     color: #0077b5;
-    width: 20px;
-    height: 20px; /* LinkedIn brand color */
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     object-position: center center;
+} 
+.internal-icon{
+  width: 30%;
+  height: 90%;
+  text-align: center;
+  border-color: #c4ddeb;
+  border-width: 2px;
+  border-style: solid;
 }
-@media (min-width: 1200px){
-    mat-icon{
-        transform: scale(3);
-    }
+button{
+    /* position: fixed;
+    top: 1%;
+   right: 1%;  */
 }
 
-@media (max-width: 768px) {
-    .landing-main {
-        min-height: auto; /* or any other value */
+.main-header{
+    display: flex;
+    color: white;
+    /* justify-content: space-between; */
+    /* padding: 10px; */
+}
+
+  .main-left{
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    font-family: "Audiowide", sans-serif;
+  }
+  .main-right{
+    position: fixed;
+    top: 1%;
+    right: 1%;  
+    background-image: linear-gradient(to right, rgb(106,6,236),rgb(220,0,240));
+}
+  .main-right a{
+    margin-right: 40px;
+    position: fixed;
+    top: 1%;
+   right: 1%;  
+}
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
+  .animate__animated.animate__lightSpeedInRight {
+    --animate-duration: 2s;
+    --animate-repeat: 2;
+    
+    
+  }
+  .internal-icon p{
+    padding: 2px;
+  }
+  .landing-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 12%;
+    line-height: 5em;
+
+  }
+  .landing-text h1{
+    font-size: 6rem;
+    font-family: 'Inter', sans-serif !important;
+    line-height: 1em;
+  }
+  .landing-text h3{
+    font-size: 2rem;
+    
+  }
+    .animate__animated.animate__flip {
+        --animate-duration: 2s;
+      }
+
+  mat-menu a{
+    color: black;
+    font-style: unset;
+  }
+
+ @media (min-width: 768px){
+    .linkedin-icon {
+       
     }
+} 
+
+@media (max-width: 902px) {
+    .landing-main {
+     height: auto;   
+     width: 100%;
+     line-height: 0em; /* or any other value */
+    }
+    .landing-text {
+        font-size: 2em;
+    }
+    .landing-text h1{
+        font-size: 2em;
+    }
+    .landing-text h3{
+        font-size: 1em;
+    }
+    .landing-iconset{
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    }
+    .internal-icon {
+      width: 90%;
+    }.landing-text{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-left: 2em;
+  
+    }
+    .landing-text h1{
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif !important;
+      line-height: 1em;
+    }
+    .landing-text h3{
+      font-size: 1rem;
+      
+    }
+    
+}
+@media(max-width: 1195px){
+  
+  .internal-icon p{
+    display: none;
+  }
 }

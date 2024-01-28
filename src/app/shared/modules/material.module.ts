@@ -13,7 +13,7 @@ import { MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 const materialModules = [
   MatToolbarModule,
@@ -24,7 +24,8 @@ const materialModules = [
   MatInputModule,
   MatButtonModule,
   MatGridListModule,
-  MatCardModule
+  MatCardModule,
+  MatSnackBarModule
 ]
 const layoutModules = [
   LayoutModule,

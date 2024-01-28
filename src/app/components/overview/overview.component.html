@@ -1,59 +1,61 @@
-<div class="overview-main">
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px" fxLayoutAlign="start center">
-      <div fxFlex="30" fxFlex.xs="100" fxLayoutAlign="end" fxLayoutAlign.xs="center">
-        <!-- Content for the first column -->
-        <img class = "overview-img"src="https://previews.123rf.com/images/happyvector071/happyvector0711904/happyvector071190416116/120957921-creative-illustration-of-default-avatar-profile-placeholder-isolated-on-background-art-design-grey.jpg"/>
-      </div>
-      <div fxFlex="50" fxFlex.xs="100" fxLayoutAlign.sm="center">
-        <!-- Content for the second column -->
-        <h3>A bit about me</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim maiores, fuga voluptatibus ut adipisci assumenda magni ratione nesciunt earum eos veniam, nihil id dolor corporis possimus repellat labore vero?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, provident vel voluptatem praesentium, ducimus ut facere est adipisci pariatur amet laborum corrupti quidem non, aut eaque? Perspiciatis non similique perferendis!</p>
+<section id="about" class="overview">
+    <div class="overview-main">
+      <div class="Skillset-heading"><h4 class="heading">About Me</h4></div>
+      <div class="overview-desc" fxLayout="row" fxLayout.xs="column" fxLayoutGap="20px" fxLayoutAlign="start center">
+        <div fxFlex="30" fxFlex.xs="100" fxLayoutAlign="end" fxLayoutAlign.xs="center">
+          <img class = "overview-img"src="/assets/photo.jpg"/>
         </div>
+        <div class="self-desc" fxFlex="50" fxFlex.xs="100" fxLayoutAlign.sm="center">
+            <!-- Content for the second column -->
+            <p>I have more than 4 years experience as full-stack developer. I used React and Angular for frontend development and Spring boot for the backend. 
+              Love what I’m doing and passionate about applying and learning microservice architecture and machine learning.
+            </p>
+        </div>
+    </div>
+    
   </div>
-  <div class="Skillset-heading" fxLayoutAlign="center end"><h4 class="heading">Expeirence timeline</h4></div>
-</div>
-  <div class ="skillSet-Container" fxLayoutAlign="center center">
-    <div >
+  <div class ="skillSet-Container" >
+        <div >
+            <div class="container">
+              <div class="skills s_90">90%</div>
+            </div>
+            <p>Java,Spring Boot</p>
+            <div class="container">
+              <div class="skills s_80">80%</div>
+            </div>
+            <p>Node JS, Express</p>
+            <div class="container">
+              <div class="skills s_65">65%</div>
+            </div>
+            <p>JavaScript Angular React</p>
+        </div>
+        <div  >
+          <div class="container">
+            <div class="skills s_90">90%</div>
+          </div>
+          <p>Docker, Kubernetes</p>
+          <div class="container">
+            <div class="skills s_80">80%</div>
+          </div>
+          <p>AWS - EC2, ECS , Lambda , Gateway</p>
+          <div class="container">
+            <div class="skills s_65">65%</div>
+          </div>
+          <p>Python</p>
+      </div>
+      <div  >
         <div class="container">
           <div class="skills s_90">90%</div>
         </div>
-        <p>CSS</p>
+        <p>Docusing integration</p>
         <div class="container">
           <div class="skills s_80">80%</div>
         </div>
-        <p>JavaScript</p>
+        <p>Version control, CICD</p>
         <div class="container">
           <div class="skills s_65">65%</div>
         </div>
         <p>Python</p>
-    </div>
-    <div  >
-      <div class="container">
-        <div class="skills s_90">90%</div>
       </div>
-      <p>CSS</p>
-      <div class="container">
-        <div class="skills s_80">80%</div>
-      </div>
-      <p>JavaScript</p>
-      <div class="container">
-        <div class="skills s_65">65%</div>
-      </div>
-      <p>Python</p>
   </div>
-  <div  >
-    <div class="container">
-      <div class="skills s_90">90%</div>
-    </div>
-    <p>CSS</p>
-    <div class="container">
-      <div class="skills s_80">80%</div>
-    </div>
-    <p>JavaScript</p>
-    <div class="container">
-      <div class="skills s_65">65%</div>
-    </div>
-    <p>Python</p>
-  </div>
-</div>
+</section>
