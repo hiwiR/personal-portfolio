@@ -9,11 +9,13 @@ import { ComponentModule } from './shared/modules/component.module';
 import { RouterModule } from '@angular/router';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TimelineComponent
+    TimelineComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

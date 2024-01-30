@@ -1,22 +1,15 @@
 
 .landing-bg{
   margin-top: 6%;
-  background-image: url(https://media.istockphoto.com/id/1322403705/video/4k-beautiful-abstract-wave-background-with-copy-space.jpg?s=640x640&k=20&c=Q4nDAsskIOBEy3A-rhu3y0myYBnzE603lXxbls8f_i8=);
-  /* background-size: 100% auto; Cover the entire container */
- /* Center the image */
-  /* Do not repeat the image */
+  background-image: url(https://t4.ftcdn.net/jpg/04/71/08/25/360_F_471082591_uZw1eOWGYGAepMG4kL0UkaAYfHQLonag.jpg);
   background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat;
  height: 46%;
- width: 100%; /* Set the height to cover the entire viewport */
-  /* Remove default margins */
+ width: 100%; 
  display: flex;
  flex-direction: column;
  color: white; 
- /* background-size: cover;
- background-repeat: no-repeat;
- background-position: center center; */
 }
 .landing-main{
     display: flex;
@@ -117,13 +110,14 @@ button{
     font-size: 2rem;
     
   }
-    .animate__animated.animate__flip {
-        --animate-duration: 2s;
-      }
+  .animate__animated.animate__flip {
+    --animate-duration: 2s;
+  }
 
-  mat-menu a{
-    color: black;
-    font-style: unset;
+  a{
+    color: rgb(110, 10, 135);
+    text-decoration: none;
+    align-items: center;
   }
 
  @media (min-width: 768px){

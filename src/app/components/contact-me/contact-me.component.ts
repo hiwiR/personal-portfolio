@@ -12,6 +12,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class ContactMeComponent implements OnInit {
 
   contactForm! : FormGroup;
+  MOBILE_PATTERN = '/[0-9\+\-\ ]/';
 
   constructor(private formBuilder:FormBuilder,private contactService : ContactService,private snackBar: MatSnackBar){}
   ngOnInit(): void {
@@ -19,7 +20,7 @@ export class ContactMeComponent implements OnInit {
         title: ['',Validators.required],
         email: ['',[Validators.required,Validators.email]],
         guestName: ['',Validators.required],
-        phone: [''],
+        phone: ['', Validators.pattern(("\\d{10}"))],
         message:['',Validators.required]
     });
   }
