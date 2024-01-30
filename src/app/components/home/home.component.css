@@ -1,35 +1,174 @@
+
 .landing-bg{
- background-image: url(https://www.pixground.com/wp-content/uploads/2023/11/Technology-Futuristic-Cloud-AI-Generated-4K-Wallpaper.jpg);
- background-size: cover; /* Cover the entire container */
- background-position: center; /* Center the image */
- background-repeat: no-repeat; /* Do not repeat the image */
- height: 75vh; /* Set the height to cover the entire viewport */
- margin: 0; /* Remove default margins */
+  margin-top: 6%;
+  background-image: url(https://t4.ftcdn.net/jpg/04/71/08/25/360_F_471082591_uZw1eOWGYGAepMG4kL0UkaAYfHQLonag.jpg);
+  background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+ height: 46%;
+ width: 100%; 
  display: flex;
  flex-direction: column;
- align-items: center;
- justify-content: center; 
  color: white; 
- display: flex;
 }
-.landing-text{
-    color: white;
-    font-size: 50px;
-    
+.landing-main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .landing-iconset{
-      position: absolute;
-      bottom: 12%; /* Adjust the negative margin to control the amount of overlap */
-      /* Additional styling for the Sample div if needed */
-      background-color: whitesmoke;
-      padding: 1%;
-      height: 100px;
-      width: 40%;
+     
+      background-color: white;
+      padding: 1px;
+      height: 40%;
+      width: 60%;
       color: black;
       display: flex;
-      justify-content: space-evenly;
       align-items: center;
+      justify-content: space-evenly;
+      left: 20%;
+      
 }
-mat-icon {
-    transform: scale(3);
+.linkedin-icon {
+    margin-top: 5%;
+    padding: 1%;
+    font-size: 20px; 
+    color: #0077b5;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center center;
+} 
+.internal-icon{
+  width: 30%;
+  height: 90%;
+  text-align: center;
+  border-color: #c4ddeb;
+  border-width: 2px;
+  border-style: solid;
+}
+button{
+    /* position: fixed;
+    top: 1%;
+   right: 1%;  */
+}
+
+.main-header{
+    display: flex;
+    color: white;
+    /* justify-content: space-between; */
+    /* padding: 10px; */
+}
+
+  .main-left{
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    font-family: "Audiowide", sans-serif;
+  }
+  .main-right{
+    position: fixed;
+    top: 1%;
+    right: 1%;  
+    background-image: linear-gradient(to right, rgb(106,6,236),rgb(220,0,240));
+}
+  .main-right a{
+    margin-right: 40px;
+    position: fixed;
+    top: 1%;
+   right: 1%;  
+}
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
+  .animate__animated.animate__lightSpeedInRight {
+    --animate-duration: 2s;
+    --animate-repeat: 2;
+    
+    
+  }
+  .internal-icon p{
+    padding: 2px;
+  }
+  .landing-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 12%;
+    line-height: 5em;
+
+  }
+  .landing-text h1{
+    font-size: 6rem;
+    font-family: 'Inter', sans-serif !important;
+    line-height: 1em;
+  }
+  .landing-text h3{
+    font-size: 2rem;
+    
+  }
+  .animate__animated.animate__flip {
+    --animate-duration: 2s;
+  }
+
+  a{
+    color: rgb(110, 10, 135);
+    text-decoration: none;
+    align-items: center;
+  }
+
+ @media (min-width: 768px){
+    .linkedin-icon {
+       
+    }
+} 
+
+@media (max-width: 902px) {
+    .landing-main {
+     height: auto;   
+     width: 100%;
+     line-height: 0em; /* or any other value */
+    }
+    .landing-text {
+        font-size: 2em;
+    }
+    .landing-text h1{
+        font-size: 2em;
+    }
+    .landing-text h3{
+        font-size: 1em;
+    }
+    .landing-iconset{
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    }
+    .internal-icon {
+      width: 90%;
+    }.landing-text{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-left: 2em;
+  
+    }
+    .landing-text h1{
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif !important;
+      line-height: 1em;
+    }
+    .landing-text h3{
+      font-size: 1rem;
+      
+    }
+    
+}
+@media(max-width: 1195px){
+  
+  .internal-icon p{
+    display: none;
+  }
 }

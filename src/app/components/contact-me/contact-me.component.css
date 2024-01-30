@@ -1,0 +1,148 @@
+.container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    /* background-image: url(https://media.istockphoto.com/id/1322403705/video/4k-beautiful-abstract-wave-background-with-copy-space.jpg?s=640x640&k=20&c=Q4nDAsskIOBEy3A-rhu3y0myYBnzE603lXxbls8f_i8=);
+    background-size: 100% auto; /* Stretch horizontally, maintain aspect ratio vertically */
+    background-position: center; /* Center the background image 
+    background-repeat: no-repeat;  
+    background-color: rgba(255, 255, 255, 0.5) */
+}
+.contact-form{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-image : url(https://assets-global.website-files.com/5a9ee6416e90d20001b20038/64c21faa4f2a2f5ac63df849_-23.png); */
+}
+
+.contact-form mat-form-field{
+    width: 40%;
+}
+
+h1{
+    padding: 5%;  
+}
+
+.contact-menus{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contact-menu{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+   
+   
+} 
+.contact-side{
+    background-image: linear-gradient(to bottom, rgb(179, 136, 236),rgb(231, 152, 238));
+    font-size: "30px";
+}
+::ng-deep .form-btn {
+    background-image: linear-gradient(to right, rgb(110, 5, 249),rgb(220,0,240)) !important;
+    width: 10%;
+    color: white !important;
+    margin-top: 1%;
+    
+}
+
+
+.Skillset-heading{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 40%;
+}
+.Skillset-heading::after{
+    position: absolute;
+    content: ' ';
+    width: 13%;
+    height: 3px;
+    left: 9%;
+    bottom: -5px;
+    background-image: linear-gradient(to right, rgb(110, 5, 249),rgb(220,0,240));
+    transform: translateX(-50%); 
+}
+.Skillset-heading h4{
+    font-size:  27px;
+    font-weight: 500;
+    color: rgb(106,6,236);
+}
+.address{
+    margin-top: 4%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://media.istockphoto.com/id/1146013421/video/smooth-clean-and-abstract-looped-gradient-background-4k-video-for-underwater-ocean-sky-clouds.jpg?s=640x640&k=20&c=5vHvzGWswZU-6WHSHm32WWgbUV_b2nDa57mVRbzufjk=); 
+    background-size: 100% 100%; /* Stretch horizontally, maintain aspect ratio vertically */
+    /* background-position: center; /* Center the background image 
+    background-repeat: no-repeat; */
+    width: 100%;
+}
+.landing-iconset {
+    
+      width: 60%;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+}
+.linkedin-icon {
+    padding-top: 3%;
+    font-size: 10px; 
+    color: #0077b5;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center center;
+} 
+.landing-iconset p{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-family: Raleway,Helvetica,Arial
+}
+.mat-mdc-snack-bar-container {
+    &.blue-snackbar {
+      --mdc-snackbar-container-color: #2196f3;
+      --mat-mdc-snack-bar-button-color: #fff;
+      --mdc-snackbar-supporting-text-color: #fff;
+    }
+  }
+
+
+@media screen and (max-width:1050px) {
+    .contact-menu{
+        width: 100%;
+        height: 100vh;
+    }
+    .address{
+        width: 100%;
+        height: 50%;
+        margin-top: 2%;
+        background-image: white !important;
+    }
+    .landing-iconset{
+        width: 80%;
+        flex-direction: column;
+        /* background-image: url(https://media.istockphoto.com/id/1146013421/video/smooth-clean-and-abstract-looped-gradient-background-4k-video-for-underwater-ocean-sky-clouds.jpg?s=640x640&k=20&c=5vHvzGWswZU-6WHSHm32WWgbUV_b2nDa57mVRbzufjk=);  */
+    }
+    .contact-form mat-form-field{
+        width: 80%;
+    }
+}
+@media (min-width: 768px){
+    .linkedin-icon {
+       
+    }
+} 

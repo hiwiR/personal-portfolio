@@ -1,0 +1,118 @@
+#about{
+    height: auto;
+    margin-bottom: 50px;
+}
+.overview {
+    height: auto;
+}
+.overview-main{
+    margin-top: 7%
+}
+.overview-desc{
+    margin-top: 5%;
+}
+.overview-img{
+    width: 30%;
+    height: 30%;
+    border-color: rgb(225, 192, 224);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20%;
+}
+h1{
+    font-size: 900;
+}
+
+.Skillset-heading{
+    position: relative;
+    left: 10%;
+    width: 50%;
+}
+.Skillset-heading::after{
+    position: absolute;
+    content: ' ';
+    width: 13%;
+    height: 3px;
+    left: 10%;
+    bottom: -5px;
+    background-image: linear-gradient(to right, rgb(110, 5, 249),rgb(220,0,240));
+    transform: translateX(-50%); 
+}
+.Skillset-heading h4{
+    font-size:  27px;
+    font-weight: 500;
+    color: rgb(106,6,236);
+}
+.self-desc{
+    
+    
+   
+}
+.self-desc p{
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: Raleway,Helvetica,Arial
+}
+.progress-label{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.skillSet-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.skillSet-Container div{
+    flex: 1;
+}
+.test1 .mat-progress-bar-fill::after {
+    background-color: #1E457C !important;
+}
+
+.container {
+    width: 100%; 
+    background-color: #ddd;
+    margin-top: 10%;
+}
+
+.skills {
+    text-align: right; 
+    color: white; 
+    background-image: linear-gradient(to right, rgb(110, 5, 249),rgb(220,0,240));
+  }
+  .s_90 {width: 90%; } 
+  .s_80 {width: 80%; } 
+  .s_65 {width: 65%; }
+
+  @media(max-width: 1000px) {
+    .overview-img{
+        width: 90%;
+        height: 90%;
+        border-color: black;
+        border-width: 5px;
+        border-style: solid;
+        border-radius: 0%;
+    }
+    .overview-desc{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .skillSet-Container{
+        padding-left : 10%;
+        padding-right: 10%;
+    }
+    .skillSet-Container div{
+        flex: 0 0 100%;
+       
+    }
+    h3{
+        text-align: center;
+    }
+}

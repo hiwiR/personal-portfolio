@@ -1,10 +1,52 @@
-<div class="landing-bg">
+<section id="home" class="landing-main">
+  <div class="landing-bg">
+    <nav class="main-header">
+        <div class="main-left">
+        </div>
+        <div class="main-right">
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon class="example-icon" aria-hidden="false" aria-label="Menu">menu</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item ><a href="#home">Home</a></button>
+            <button mat-menu-item ><a href="#about">About</a></button>
+            <button mat-menu-item ><a href="#experience">Experience</a></button>
+            <button mat-menu-item ><a href="#projects">Project</a></button>
+            <button mat-menu-item ><a href="#contact">Contact</a></button>    
+          </mat-menu>
+        </div>
+      </nav> 
     <div class="landing-text">
-        Welcome to Software Engineer Hiwot Alemayehu's Page 
+          <h1 class="animate__animated animate__bounce animate__infinite animate__slower	"> &lt;/&gt;</h1>
+          <h1 class="animate__animated animate__lightSpeedInRight ">Hiwot Alemayehu</h1>
+          <h3 class="animate__animated animate__lightSpeedInRight animate__repeat-1">Full Stack Engineer</h3>
     </div>
-    <div class="landing-iconset">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-     </div>
-</div>
+  </div>
+  <div class="landing-iconset">
+    <div class="internal-icon">
+      <a href="#projects">
+      <mat-icon class="linkedin-icon">
+      <img src="/assets/migration.png" alt="LinkedIn Icon" class="linkedin-icon"></mat-icon>
+      </a>
+      <h3>Cloud Migration</h3>
+      <p>Experienced in harnessing cloud computing technologies for scalable, reliable, and cost-effective solutions. 
+        </p>
+    </div>
+    <div class="internal-icon">
+      <a href="#projects">
+      <mat-icon class="linkedin-icon">
+      <img src="/assets/software-development.png" alt="LinkedIn Icon" class="linkedin-icon"></mat-icon>
+      </a>
+      <h3>Application Development</h3>
+      <p>Proficient in developing robust applications tailored to diverse business needs.</p>
+    </div>
+    <div class="internal-icon">
+      <a href="#projects">
+         <mat-icon class="linkedin-icon">
+         <img src="/assets/artificial-intelligence.png" alt="LinkedIn Icon" class="linkedin-icon"></mat-icon>
+        </a>
+        <h3>Artificial Intelligence</h3>
+        <p>Exploring the fascinating world of AI as a beginner, eager to delve into its intricacies and applications.</p>
+    </div>
+  </div>
+</section>
